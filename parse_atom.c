@@ -24,6 +24,8 @@ double		parse_atom(char **expr)
 	{
 		neg = TRUE;
 		(*expr)++;
+		while (**expr == ' ')
+			(*expr)++;
 	}
 	if (**expr == '+')
 		(*expr)++;
